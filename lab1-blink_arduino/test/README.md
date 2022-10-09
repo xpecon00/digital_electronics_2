@@ -47,4 +47,4 @@ int main(void)
 
 2. Scheme of Morse code application, i.e. connection of AVR device, LED, resistor, and supply voltage. The image can be drawn on a computer or by hand. Always name all components and their values!
 
-   ![Schematic](images/morse.png)
+   ![Schematic](https://github.com/xpecon00/digital_electronics_2/blob/main/lab1-blink_arduino/test/images/schema.PNG)
