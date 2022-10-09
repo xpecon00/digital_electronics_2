@@ -1,4 +1,4 @@
-# Lab 2: Petra Slotová
+# Lab 2: David Pěčonka
 
 ### GPIO control registers
 
