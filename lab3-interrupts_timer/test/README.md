@@ -1,9 +1,8 @@
-## Pre-Lab preparation
+# Lab 3: David Pěčonka
 
-Consider an n-bit number that we increment based on the clock signal. If we reach its maximum value and try to increase it, the value will be reset. We call this state an **overflow**. The overflow time depends on the frequency of the clock signal, the number of bits, and on the prescaler value:
+### Overflow times
 
-
-1. Calculate the overflow times for three Timer/Counter modules that contain ATmega328P if CPU clock frequency is 16&nbsp;MHz. Complete the following table for given prescaler values. Note that, Timer/Counter2 is able to set 7 prescaler values, including 32 and 128 and other timers have only 5 prescaler values.
+1. Complete table with overflow times.
 
    | **Module** | **Number of bits** | **1** | **8** | **32** | **64** | **128** | **256** | **1024** |
    | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -11,12 +10,34 @@ Consider an n-bit number that we increment based on the clock signal. If we reac
    | Timer/Counter1 | 16 | 4.1m | 32.8m | -- | 262.1m | -- | 1.49 | 4.194 |
    | Timer/Counter2 | 8  | 16u | 128u | 512u | 1m | 2m | 4.1m | 16.4m |
 
-<a name="part1"></a>
 
-2. The timer modules can be configured with several special purpose registers. According to the [ATmega328P datasheet](https://www.microchip.com/wwwproducts/en/ATmega328p) (eg in the **8-bit Timer/Counter0 with PWM > Register Description** section), which I/O registers and which bits configure the timer operations?
 
-   | **Module** | **Operation** | **I/O register(s)** | **Bit(s)** |
-   | :-: | :-- | :-: | :-- |
-   | Timer/Counter0 | Prescaler<br><br>8-bit data value<br>Overflow interrupt enable | TCCR1B<br><br>TCNT0<br>TIMSK0 | CS02, CS01, CS00<br>(000: stopped, 001: 1, 010: 8, 011: 64, 100: 256, 101: 1024)<br><br>TCNT0[7:0]<br><br> |
-   | Timer/Counter1 | Prescaler<br><br>16-bit data value<br>Overflow interrupt enable | TCCR1B<br><br>TCNT1H, TCNT1L<br>TIMSK1 | CS12, CS11, CS10<br>(000: stopped, 001: 1, 010: 8, 011: 64, 100: 256, 101: 1024)<br>TCNT1[15:0]<br>TOIE1 (1: enable, 0: disable) |
-   | Timer/Counter2 | Prescaler<br><br>8-bit data value<br>Overflow interrupt enable | <br><br><br> | <br><br><br> |
+### Interrupts
+
+2. In `timer.h` header file, define macros also for Timer/Counter2. Listing of part of the header file with settings for Timer/Counter2. Always use syntax highlighting, meaningful comments, and follow C guidelines:
+
+/**
+ * @name  Definitions for 8-bit Timer/Counter2
+ * @note  t_OVF = 1/F_CPU * prescaler * 2^n where n = 8, F_CPU = 16 MHz
+ 
+/** @brief Stop timer, prescaler 000 --> STOP */
+#define TIM2_stop()           TCCR2B &= ~((1<<CS22) | (1<<CS21) | (1<<CS20));
+/** @brief Set overflow 16us, prescaler 001 --> 1 */
+#define TIM2_overflow_16us()   TCCR2B &= ~((1<<CS22) | (1<<CS21)); TCCR2B |= (1<<CS20);
+/** @brief Set overflow 128us, prescaler 010 --> 8 */
+#define TIM2_overflow_128us()  TCCR2B &= ~((1<<CS22) | (1<<CS20)); TCCR2B |= (1<<CS01);
+/** @brief Set overflow 512us, prescaler 011 --> 32 */
+#define TIM2_overflow_512us() TCCR2B &= ~(1<<CS22); TCCR2B |= (1<<CS21) | (1<<CS20);
+/** @brief Set overflow 1ms, prescaler 100 --> 64 */
+#define TIM2_overflow_1ms()    TCCR2B &= ~((1<<CS21) | (1<<CS20)); TCCR2B |= (1<<CS22);
+/** @brief Set overflow 2ms, prescaler // 101 --> 128 */
+#define TIM2_overflow_2ms()    TCCR2B &= ~(1<<CS21); TCCR2B |= (1<<CS22) | (1<<CS20);
+/** @brief Set overflow 4ms, prescaler // 110 --> 256 */
+#define TIM2_overflow_4ms()    TCCR2B &= ~(1<<CS20); TCCR2B |= (1<<CS22) | (1<<CS21);
+/** @brief Set overflow 16ms, prescaler // 111 --> 1024 */
+#define TIM2_overflow_16ms()    TCCR2B |= (1<<CS22) | (1<<CS21) | (1<<CS20);
+
+/** @brief Enable overflow interrupt, 1 --> enable */
+#define TIM2_overflow_interrupt_enable()  TIMSK2 |= (1<<TOIE2);
+/** @brief Disable overflow interrupt, 0 --> disable */
+#define TIM2_overflow_interrupt_disable() TIMSK2 &= ~(1<<TOIE2);
