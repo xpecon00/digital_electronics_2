@@ -13,7 +13,7 @@ Cílem projektu byl návrh a následná realizace aplikace, která pro svou funk
 ### Popis HARDWARE
 
 #### Rotační enkodér
-![KY-040]()
+![KY-040](https://github.com/xpecon00/digital_electronics_2/blob/main/project-documentation/images/enkod%C3%A9r.jpg)
 #### Joystik
 
 #### Digilent PmodCLP LCD modul
