@@ -35,7 +35,7 @@ Tlačitko [7]:
 
 - slouží jako RESET
 
-MicroUSB[6]
+MicroUSB [6]:
 
 - určeno k nahrávání programu do mikrokontroléru
 
