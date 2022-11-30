@@ -39,7 +39,7 @@ Rotačení enkodér má čtyři piny:
 -   SW slouží jako výstupní pin pro analogový signál tlačítka
 -   CLK a CT jsou piny pro analogové signály, které obashují informace o rotaci vlevo resp. vpravo
 
-Rotaci a tlačítko enkodéru využíváme pro pohyb v hracím menu na displeji. Tedy spuštění hry, prokluknutí, scrollování.
+Rotaci a tlačítko enkodéru využíváme pro pohyb v hracím menu na displeji. Tedy spuštění hry, prokliknutí, scrollování.
 
 #### Joystik
 
