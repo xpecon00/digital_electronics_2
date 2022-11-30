@@ -13,8 +13,23 @@ Cílem projektu byl návrh a následná realizace aplikace, která pro svou funk
 ### Popis HARDWARE
 
 #### ATMega328p
-<img src="" width="350">
+<img src="https://github.com/xpecon00/digital_electronics_2/blob/main/project-documentation/images/arduino.PNG" width="350">
 
+Piny 10,11 [1]:
+
+- slouží pro určení směru roatce enkodéru
+
+Piny 8,9 [2]:
+
+- pomocí těchto pinl se určuje zda bude docházet k zápisu nebo ke čtení
+
+Piny 4,5,6,7 [3]:
+
+- piny k přenosu digitálních dat pro displej
+
+Piny 2,3 [4]:
+
+- piny, které přijímají informaci o tom zda byly tlačitka zabudované v joystiku a enkodréru stisknuta
 #### Rotační enkodér
 <img src="https://github.com/xpecon00/digital_electronics_2/blob/main/project-documentation/images/enkod%C3%A9r.jpg" width="350">
 Rotačení enkodér má čtyři piny: 
