@@ -42,5 +42,10 @@ Rotačení enkodér má čtyři piny:
 Rotaci a tlačítko enkodéru využíváme pro pohyb v hracím menu na displeji. Tedy spuštění hry, prokliknutí, scrollování.
 
 #### Joystik
+<img src="" width="350">
 
 #### Digilent PmodCLP LCD modul
+
+
+https://img.dxcdn.com/productimages/sku_370842_1.jpg
+https://udvabony.com/wp-content/uploads/2019/05/arduino-joystick-module-1000x1000.jpg
