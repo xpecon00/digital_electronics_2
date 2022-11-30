@@ -34,17 +34,24 @@ Piny 2,3 [4]:
 <img src="https://github.com/xpecon00/digital_electronics_2/blob/main/project-documentation/images/enkod%C3%A9r.jpg" width="350">
 Rotačení enkodér má čtyři piny: 
 
--   Pin GND je pro uzemnění 
--   Pin + slouží pro napájení
--   SW slouží jako výstupní pin pro analogový signál tlačítka
--   CLK a CT jsou piny pro analogové signály, které obashují informace o rotaci vlevo resp. vpravo
+- Pin GND slouží k uzemnění
+- Pin + slouží pro napájení enkodéru
+- Pin SW je určen pro přenos informace o tlačítku
+- CLK a CT jsou piny pro analogové signály, které obashují informace o rotaci vlevo resp. vpravo
 
 Rotaci a tlačítko enkodéru využíváme pro pohyb v hracím menu na displeji. Tedy spuštění hry, prokliknutí, scrollování.
 
 #### Joystik
-<img src="" width="350">
+<img src="https://github.com/xpecon00/digital_electronics_2/blob/main/project-documentation/images/joystick.jpg" width="300">
+
+- Pin GND slouží k uzemnění
+- Pin +5 určen pro napájení joystiku
+- Pin Vrx slouží pro určení polohy joystiku v ose x
+- Pin Vry slouží pro určení polohy joystiku v ose y
+- Pin SW je určen pro přenos informace o tlačítku
 
 #### Digilent PmodCLP LCD modul
+<img src="" width="300">
 
 
 https://img.dxcdn.com/productimages/sku_370842_1.jpg
