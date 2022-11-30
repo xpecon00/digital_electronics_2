@@ -13,7 +13,7 @@ Cílem projektu byl návrh a následná realizace aplikace, která pro svou funk
 ### Popis HARDWARE
 
 #### ATMega328p
-<img src="https://github.com/xpecon00/digital_electronics_2/blob/main/project-documentation/images/arduino.PNG" width="350">
+<img src="https://github.com/xpecon00/digital_electronics_2/blob/main/project-documentation/images/atmega.PNG" width="350">
 
 Piny 10,11 [1]:
 
