@@ -73,7 +73,7 @@ Joystik využíváme pro ovládání hry. Pohyb všemi směry, tlačítko slouž
 Dispej slouží k samotnému zobrazení celé vytvořené aplikace (startovací menu, průběh hry).
 
 ### Schéma zapojení
-<img src="">
+<img src="https://github.com/xpecon00/digital_electronics_2/blob/main/project-documentation/images/sch%C3%A9ma%20zapojen%C3%AD.png">
 
 https://img.dxcdn.com/productimages/sku_370842_1.jpg
 https://udvabony.com/wp-content/uploads/2019/05/arduino-joystick-module-1000x1000.jpg
