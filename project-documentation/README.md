@@ -41,7 +41,6 @@ MicroUSB [6]:
 
 #### Rotační enkodér
 <img src="https://github.com/xpecon00/digital_electronics_2/blob/main/project-documentation/images/enkod%C3%A9r.jpg" width="350">
-Rotačení enkodér má čtyři piny: 
 
 - Pin GND slouží k uzemnění
 - Pin + slouží pro napájení enkodéru
@@ -59,9 +58,22 @@ Rotaci a tlačítko enkodéru využíváme pro pohyb v hracím menu na displeji.
 - Pin Vry slouží pro určení polohy joystiku v ose y
 - Pin SW je určen pro přenos informace o tlačítku
 
+Joystik využíváme pro ovládání hry. Pohyb všemi směry, tlačítko slouží pro opětovné spuštění hry po skončení. 
+
 #### Digilent PmodCLP LCD modul
 <img src="https://github.com/xpecon00/digital_electronics_2/blob/main/project-documentation/images/LCD.PNG" width="300">
 
+- Piny J1.1,2,3,4,5,6,7,8,9,10 slouží pro přenos dat po sběrnici
+- Piny J1.5, J1.11, J2.5 slouží jako signálová zem
+- Piny J1.6, J1.12, J2.6 jsou určeny pro napájení displeje
+- Pin J2.1 slouží pro výběr registru
+- Pin J2.2 určuje zda budeme data zapisovat nebo číst
+- Pin J2.3 enablovací pin
+
+Dispej slouží k samotnému zobrazení celé vytvořené aplikace (startovací menu, průběh hry).
+
+### Schéma zapojení
+<img src="">
 
 https://img.dxcdn.com/productimages/sku_370842_1.jpg
 https://udvabony.com/wp-content/uploads/2019/05/arduino-joystick-module-1000x1000.jpg
