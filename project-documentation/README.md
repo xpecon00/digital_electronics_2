@@ -30,6 +30,15 @@ Piny 4,5,6,7 [3]:
 Piny 2,3 [4]:
 
 - piny, které přijímají informaci o tom zda byly tlačitka zabudované v joystiku a enkodréru stisknuta
+
+Tlačitko [7]:
+
+- slouží jako RESET
+
+MicroUSB[6]
+
+- určeno k nahrávání programu do mikrokontroléru
+
 #### Rotační enkodér
 <img src="https://github.com/xpecon00/digital_electronics_2/blob/main/project-documentation/images/enkod%C3%A9r.jpg" width="350">
 Rotačení enkodér má čtyři piny: 
@@ -51,7 +60,7 @@ Rotaci a tlačítko enkodéru využíváme pro pohyb v hracím menu na displeji.
 - Pin SW je určen pro přenos informace o tlačítku
 
 #### Digilent PmodCLP LCD modul
-<img src="" width="300">
+<img src="https://github.com/xpecon00/digital_electronics_2/blob/main/project-documentation/images/LCD.PNG" width="300">
 
 
 https://img.dxcdn.com/productimages/sku_370842_1.jpg
