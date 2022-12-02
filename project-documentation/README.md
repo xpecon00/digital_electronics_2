@@ -120,7 +120,7 @@ Obr. č. 1 Schéma zapojení v programu SimulIDE
 <img src="" width="350">
 
 ### Video
-
+https://www.youtube.com/watch?v=gDcu1wMSoR0
 
 ### Zdroje
 
