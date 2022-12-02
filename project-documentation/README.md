@@ -108,4 +108,7 @@ Obr. č. 1 Schéma zapojení v programu SimulIDE
 
 ### Zdroje
 https://img.dxcdn.com/productimages/sku_370842_1.jpg
+
 https://udvabony.com/wp-content/uploads/2019/05/arduino-joystick-module-1000x1000.jpg
+
+https://cdn.myshoptet.com/usr/www.hwkitchen.cz/user/shop/big/2462-3_ky-040-rotacni-enkoder-s-tlacitkem-zvrchu.jpg?5bc5d043
