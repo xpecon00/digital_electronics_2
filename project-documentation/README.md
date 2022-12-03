@@ -105,7 +105,7 @@ Obr. č. 1 Schéma zapojení v programu SimulIDE
 ### Popis SOFTWARE
 
 * První vývojový diagram znázorńuje zobrazení hlavního menu. Kdy při otáčení enkodérem vybíráme ze dvou možností START GAME a SHOW RECORDS. Pro indikaci zvoleného řádku je zde vždy na začátek zvoleného řádku vložen znak '>'. Dále je zde znázorněn také výpis prvních deseti míst posledních odehraných rekordů. 
-<img src="" width="350">
+<img src="https://github.com/xpecon00/digital_electronics_2/blob/main/project-documentation/images/Show%20main%20menu%2C%20records.jpg">
 
 * Dále zde máme enkodér u kterého jsme museli rozlišit rotaci vlevo a rotaci vpravo, to je zařízeno pomocí signálu, které generuje samotný enkodér při rotaci. Velký problém zde dělali zákmity, jelikož se jedná o mechanický enkodér. Tento problém jsme vyřešili tím, že projdou změny pouze delší než 10ms, čimž zajistíme ignoraci krátkých zákmitů. Enkodér jsme využili pro pohyb nahoru a dolů v main menu.  
 <img src="" width="350">
