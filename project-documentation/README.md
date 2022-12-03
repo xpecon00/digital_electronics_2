@@ -117,10 +117,10 @@ Obr. č. 1 Schéma zapojení v programu SimulIDE
 <img src="https://github.com/xpecon00/digital_electronics_2/blob/main/project-documentation/images/Buttons.jpg">
 
 * Další vývojový diagram znázorńuje posun doleva a náhodné generování překážek. Kdy máme předem definované hrací pole podle počtu řádků a počtu možných znaků v jednom řádku. Kdy program postupně projíždí všechny prvky displeje a ty následně posouvá směrem doleva. Generování náhodně umístěných překážek je zde zajištěno tak, že jsme určili pro oba řádky 20% pravděpodobnost, že se přkážka objeví právě v tomto řádku. Dále je zde zavedena podmínka, která znemožńuje vygenerování dvou překážek nad sebou. 
-<img src="">
+<img src="https://github.com/xpecon00/digital_electronics_2/blob/main/project-documentation/images/Displej.jpg">
 
 ### Video
-https://www.youtube.com/watch?v=gDcu1wMSoR0
+https://www.youtube.com/watch?v=a37RBYJj6u0
 
 ### Zdroje
 
