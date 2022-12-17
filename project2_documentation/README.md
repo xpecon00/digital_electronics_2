@@ -73,7 +73,7 @@ MicroUSB [6]:
 Joystik využíváme pro ovládání hry. Pohyb všemi směry, tlačítko slouží pro opětovné spuštění hry po skončení. 
 
 ### Schéma zapojení
-<img src="https://github.com/xpecon00/digital_electronics_2/blob/main/project-documentation/images/sch%C3%A9ma%20zapojen%C3%AD.png">
+<img src="https://github.com/xpecon00/digital_electronics_2/blob/main/project2_documentation/images/projekt%202%20de.png">
 Obr. č. 1 Schéma zapojení v programu SimulIDE
 
 ### Popis SOFTWARE
