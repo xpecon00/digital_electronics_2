@@ -72,6 +72,13 @@ MicroUSB [6]:
 
 Joystik využíváme pro ovládání hry. Pohyb všemi směry, tlačítko slouží pro opětovné spuštění hry po skončení. 
 
+#### Dva servo motory 
+<img src="https://github.com/xpecon00/digital_electronics_2/blob/main/project2_documentation/images/servo.jpg" width="300">
+
+- Hnedý drátek GND slouží pro uzemnění
+- Červené drátek slouží pro napájení 5V
+- Oranžový drátek souží pro příjem PWM z mikrokontroleru
+
 ### Schéma zapojení
 <img src="https://github.com/xpecon00/digital_electronics_2/blob/main/project2_documentation/images/projekt%202%20de.png">
 Obr. č. 1 Schéma zapojení v programu SimulIDE
@@ -79,19 +86,10 @@ Obr. č. 1 Schéma zapojení v programu SimulIDE
 ### Popis SOFTWARE
 
 * První vývojový diagram znázorńuje zobrazení hlavního menu. Kdy při otáčení enkodérem vybíráme ze dvou možností START GAME a SHOW RECORDS. Pro indikaci zvoleného řádku je zde vždy na začátek zvoleného řádku vložen znak '>'. Dále je zde znázorněn také výpis prvních deseti míst posledních odehraných rekordů. 
-<img src="https://github.com/xpecon00/digital_electronics_2/blob/main/project-documentation/images/Show%20main%20menu%2C%20records.jpg">
+<img src="">
 
 * Dále zde máme enkodér u kterého jsme museli rozlišit rotaci vlevo a rotaci vpravo, to je zařízeno pomocí signálu, které generuje samotný enkodér při rotaci. Velký problém zde dělali zákmity, jelikož se jedná o mechanický enkodér. Tento problém jsme vyřešili tím, že projdou změny pouze delší než 10ms, čimž zajistíme ignoraci krátkých zákmitů. Enkodér jsme využili pro pohyb nahoru a dolů v main menu.  
-<img src="https://github.com/xpecon00/digital_electronics_2/blob/main/project-documentation/images/Enkoder.jpg">
-
-* Joystik jde zde využit jako ovladání průběhu samotné hry, kdy se pomocí něho můžeme pohybovat po displeji nahoru, dolů, doleva a doprava. Joystik využívá dva kanály pro hodnoty v ose x a pro hodnoty v ose y, kdy pro změnu kanálu, ze které chceme momentálně načítat hodnoty je zde využita funkce switch. Díky tomu je program schopen určit pohyb horizontálně respektive svisle. Podmínky nám zde zaručují, že se nemůžeme dostat mimo displej.
-<img src="https://github.com/xpecon00/digital_electronics_2/blob/main/project-documentation/images/Joystik.jpg">
-
-* Rotační enkodér a joystik mají v sobě zabudované tlačitko. Tlačitko enkodéru využívéme pro spuštění hry, pro návrat zpět a pro zobrazení rekordů. Když skončí kolo hry, tak díky následnému stisknutí tlačítka joystiku se hra spustí znovu. 
-<img src="https://github.com/xpecon00/digital_electronics_2/blob/main/project-documentation/images/Buttons.jpg">
-
-* Další vývojový diagram znázorńuje posun doleva a náhodné generování překážek. Kdy máme předem definované hrací pole podle počtu řádků a počtu možných znaků v jednom řádku. Kdy program postupně projíždí všechny prvky displeje a ty následně posouvá směrem doleva. Generování náhodně umístěných překážek je zde zajištěno tak, že jsme určili pro oba řádky 20% pravděpodobnost, že se přkážka objeví právě v tomto řádku. Dále je zde zavedena podmínka, která znemožńuje vygenerování dvou překážek nad sebou. 
-<img src="https://github.com/xpecon00/digital_electronics_2/blob/main/project-documentation/images/Displej.jpg">
+<img src="">
 
 ### Video
 https://www.youtube.com/watch?v=a37RBYJj6u0
