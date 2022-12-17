@@ -22,10 +22,6 @@ Cílem projektu byl návrh a následná realizace aplikace, která pro svou funk
    │   └── gpio
    │        └── gpio.c
    │        └── gpio.h
-   │   └── lcd
-   │        └── lcd.c
-   │        └── lcd.h
-   │        └── lcd_definitions.h
    │   └── uart
    │        └── uart.c
    │        └── uart.h
