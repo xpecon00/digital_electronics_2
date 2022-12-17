@@ -85,10 +85,11 @@ Obr. č. 1 Schéma zapojení v programu SimulIDE
 
 ### Popis SOFTWARE
 
-* První vývojový diagram znázorńuje zobrazení hlavního menu. Kdy při otáčení enkodérem vybíráme ze dvou možností START GAME a SHOW RECORDS. Pro indikaci zvoleného řádku je zde vždy na začátek zvoleného řádku vložen znak '>'. Dále je zde znázorněn také výpis prvních deseti míst posledních odehraných rekordů. 
+* První vývojový diagram znázorńuje nejduležitější část našeho programu. Pomocí toho jakým směrem joystikem pohybujeme, zda ve směru osy x resp. ve směru osy y, tak dle toho se vybírá příslušný kanál. Kanál 0 indikuje pohyb ve směru osy x a kanál 1 pohyb ve směru osy y. Jestliže joystikem hýbeme doleva či doprava, tak se servo č.1
+otáčí doleva respektive doprava. Naopak pokud joystikem pohybujeme nahoru či dolů, tak se servo č.2 otáčí nahoru respektive dolů.  
 <img src="https://github.com/xpecon00/digital_electronics_2/blob/main/project2_documentation/images/flow1.png">
 
-* Dále zde máme enkodér u kterého jsme museli rozlišit rotaci vlevo a rotaci vpravo, to je zařízeno pomocí signálu, které generuje samotný enkodér při rotaci. Velký problém zde dělali zákmity, jelikož se jedná o mechanický enkodér. Tento problém jsme vyřešili tím, že projdou změny pouze delší než 10ms, čimž zajistíme ignoraci krátkých zákmitů. Enkodér jsme využili pro pohyb nahoru a dolů v main menu.  
+* Druhý vývojový diagram znázorńuje využití tlačítka zabudovaném v joystiku. Pokud dojde ke stistknutí tlačítka oba servo motory zaujmou svou původní pozici. Původní pozice je zde nastavena na střední hodnotu maximálních pozic obou servo motorů.
 <img src="https://github.com/xpecon00/digital_electronics_2/blob/main/project2_documentation/images/flow2.png">
 
 ### Video
