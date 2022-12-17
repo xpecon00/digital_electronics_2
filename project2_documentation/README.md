@@ -98,5 +98,5 @@ https://www.youtube.com/watch?v=a37RBYJj6u0
 
 1. https://img.dxcdn.com/productimages/sku_370842_1.jpg
 2. https://udvabony.com/wp-content/uploads/2019/05/arduino-joystick-module-1000x1000.jpg
-3. https://cdn.myshoptet.com/usr/www.hwkitchen.cz/user/shop/big/2462-3_ky-040-rotacni-enkoder-s-tlacitkem-zvrchu.jpg?5bc5d043
+3. https://m.media-amazon.com/images/I/61yfIwAxe0L._SL1421_.jpg
 
