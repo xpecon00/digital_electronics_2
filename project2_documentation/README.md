@@ -35,7 +35,7 @@ Cílem projektu byl návrh a následná realizace aplikace, která pro svou funk
 ### Popis HARDWARE
 
 #### ATMega328p
-<img src="https://github.com/xpecon00/digital_electronics_2/blob/main/project-documentation/images/atmega.PNG" width="350">
+<img src="https://github.com/xpecon00/digital_electronics_2/blob/main/project2_documentation/images/11.png" width="350">
 
 Piny 9,10 [1]:
 
@@ -49,11 +49,11 @@ Piny 0,1 [3]:
 
 - slouží pro čtení informace v jaké poloze se joystik nachází
 
-Tlačitko [7]:
+Tlačitko [4]:
 
 - slouží jako RESET
 
-MicroUSB [6]:
+MicroUSB [5]:
 
 - určeno k nahrávání programu do mikrokontroléru
 
@@ -89,7 +89,7 @@ otáčí doleva respektive doprava. Naopak pokud joystikem pohybujeme nahoru či
 <img src="https://github.com/xpecon00/digital_electronics_2/blob/main/project2_documentation/images/flow2.png">
 
 ### Video
-
+https://www.youtube.com/watch?v=-NYkx1fyxWs
 
 ### Zdroje
 
