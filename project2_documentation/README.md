@@ -89,7 +89,7 @@ otáčí doleva respektive doprava. Naopak pokud joystikem pohybujeme nahoru či
 <img src="https://github.com/xpecon00/digital_electronics_2/blob/main/project2_documentation/images/flow2.png">
 
 ### Video
-https://www.youtube.com/watch?v=-NYkx1fyxWs
+https://www.youtube.com/watch?v=oJ7rBAjEaFI
 
 ### Zdroje
 
